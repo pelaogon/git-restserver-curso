@@ -90,7 +90,7 @@ app.put('/usuario/:id', [verificaToken, verificaAdmin_Role], verificaToken, (req
 
 })
 
-app.delete('/usuario/:id', [verificaToken, verificaAdmin_Role], verificaToken, (req, res) => {
+app.delete('/usuario/:id', [verificaToken, verificaAdmin_Role], (req, res) => {
 
     let id = req.params.id;
 
